@@ -1,18 +1,17 @@
 'use strict'
-const modal = document.querySelectorAll(".mymodal");
-const btn = document.querySelectorAll(".modal-open");
-const cls = document.getElementsByClassName("close")[0];
 
-btn.addEventListener('click', function () {
-  modal.style.display = "block";
+const modal = document.querySelector('.mymodal');
+
+(function clickModalButton() {
+  const btn = document.querySelector('.modal-open');
+  btn.addEventListener('click', () => {
+    modal.style.display = 'block';
+  })  
 })();
 
-cls.addEventListener('click', function () {
-  modal.style.display = "none";
-})();
-
-window.onclick = (function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+(function clickModalClose() {
+  const cls = document.getElementsByClassName('close')[0];
+  cls.addEventListener('click', () =>  {
+    modal.style.display = 'none';
+  })
 })();
