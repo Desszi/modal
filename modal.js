@@ -15,3 +15,11 @@ const modal = document.querySelector('.mymodal');
     modal.style.display = 'none';
   })
 })();
+
+(function clickWindow() {
+    window.addEventListener('click', (event) => {
+    if(event.target == modal) {
+      modal.style.display = 'none';
+    }
+  })
+})();
