@@ -17,9 +17,11 @@
 .modal-container {
     background-color: #fefefe;
     margin: auto;
-    padding: 30px;
+    padding: 80px;
+    padding-top: 30px;
     border: 1px solid black;
-    width: 100%;
+    width: 60%;
+    transition-delay: 1s;
 }
 
 @media screen and(max-width: 560px) {
@@ -27,10 +29,12 @@
         width: 50%;
     }
 }
+
 .header {
     font-size: medium;
     color: rgb(92, 103, 115);
 }
+
 .modal-open {
     cursor: pointer;
     color: white;
@@ -42,10 +46,12 @@
     font-size: 3rem;
     margin-left: 40%;
 }
+
 .buttons {
     display: inline-flex;
     float: right;
 }
+
 .btn-success {
     cursor: pointer;
     color: white;
@@ -54,6 +60,7 @@
     padding: 0.5rem;
     margin: 1rem;
 }
+
 .btn-danger {
     cursor: pointer;
     color: white;
@@ -62,12 +69,13 @@
     padding: 0.5rem;
     margin: 1rem;
 }
+
 .close {
     color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+}
   
 .close:hover,.close:focus {
     color: #000;
