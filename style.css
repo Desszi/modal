@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.h-btn {
+    border: none;
+    float: right;
+    cursor: pointer;
+    background-color: white;   
+}
+
+.header {
+    font-size: medium;
+    color: rgb(92, 103, 115);
+}
+
+.buttons {
+    display: inline-flex;
+    float: right;
+}
+.btn-success {
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.btn-danger {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
