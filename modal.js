@@ -1,11 +1,12 @@
 'use strict'
 
-const modal = document.querySelector('.mymodal');
+const modal = document.querySelector('.modal-container');
 
 (function clickModalButton() {
   const btn = document.querySelector('.modal-open');
   btn.addEventListener('click', () => {
     modal.style.display = 'block';
+
   })  
 })();
 
